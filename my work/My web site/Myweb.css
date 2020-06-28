@@ -1,0 +1,229 @@
+/* Body design */
+* {
+	margin: 0;
+	padding: 0;
+}
+.container {
+	background-color:#1a1a1a;
+
+}
+body {
+	font-family: 'MuseoModerno', cursive;;
+}
+/* logo design */
+.img-logo {
+	display: flex;
+	
+}
+#logo {
+	width: 225px;
+	height: 75px;
+	margin-left: auto; 
+	margin-right: auto;
+	padding: 10px 0px 0px 5px;
+	cursor: pointer;
+	
+}
+/* nav design */
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 35px;
+}
+.nav-links {
+	display: flex;
+	width: 400px;
+	justify-content: space-between;
+	text-align: center;	
+}
+li {
+	list-style: none;
+		
+} 
+.nav-link {
+	display: inline;	
+	font-size: 20px;
+	font-weight: lighter;
+	color:#de7e00;
+	border-bottom: 1px solid transparent ;
+	text-decoration: none;
+	transition-delay: 0.3s ease;
+}
+.nav-link:hover {
+	color:gray;
+	border-bottom: 1px solid #de7e00 ;
+}
+/* image design */
+.img-row {
+	display: inline-flex;
+	margin: 10px;
+}
+.img-column {
+	display: block;
+	flex: 33.33%;
+	margin: 10px;
+	background-size: cover;
+    transition: .3s ease;
+    opacity: 1;
+}
+.img-column:hover {
+	opacity: 0.7;
+	box-shadow: 1px 1px 2px gray;	
+}
+img {
+	display: block;
+}
+/* image text */
+.Landscape {
+	position: absolute;
+	top: 280px;
+	left: 180px;
+	color: honeydew;
+	padding: 0px 5px;
+	background-color: black;
+    border: 2px solid #de7e00;
+	border-radius: 25px;
+	cursor: pointer;
+		
+}
+.Cityscape {
+	position: absolute;
+	top: 280px;
+	left: 640px;
+	color: honeydew;
+	padding: 0px 5px;
+	background-color: black;
+    border: 2px solid #de7e00;
+	border-radius: 25px;
+	cursor: pointer;	
+}
+.Fineart {
+	position: absolute;
+	top: 280px;
+	right: 180px;
+	color: honeydew;
+	padding: 0px 5px;
+	background-color: black;
+    border: 2px solid #de7e00;
+	border-radius: 25px;
+	cursor: pointer;
+}
+.Landscape:hover, .Cityscape:hover, .Fineart:hover {
+   color: #de7e00;
+}
+.footer{
+	display: flex;	
+}
+.author {
+	color: wheat;
+	background-color: #3b3a3a;
+	padding: 10px 0px 10px 10px;
+	flex: 2;	
+}
+.link {	
+	display: inline-flex;
+	padding: 10px 0px 10px 10px;
+	flex: 1;
+	background-color:#3b3a3a;
+}
+a {
+	text-decoration: none;
+	font-weight: normal;
+	color:wheat;
+}
+
+
+/* responsive design */
+@media screen and (max-width:600px) {
+.nav-links {
+	display: flex;
+	width: 300px;
+	justify-content: space-between;
+	text-align: center;	
+}
+ul li {
+	display: inline;
+	list-style: none;
+	font-size: 15px;
+	font-weight: lighter;	
+}
+.img-row {
+	display:block;
+	margin: 0px;
+	padding: 10px 0px;
+}
+
+/* image text */
+.text {
+	position: relative;
+}
+.Landscape {
+	position: absolute;
+	text-align: center;
+	top: -560px;
+	left: 130px;
+}
+.Cityscape {
+	position: absolute;
+	text-align: center;
+	top: -320px;
+	left: 140px;
+}
+.Fineart {
+	position: absolute;
+	text-align: center;
+	top: -80px;
+	right: 135px;
+}
+}
+ @media screen and (max-width:1000px) {
+.text {
+	position: relative;
+}
+.Landscape {
+	position: absolute;
+	text-align: center;
+	top: -80px;
+	left: 85px;
+}
+.Cityscape {
+	position: absolute;
+	text-align: center;
+	top: -80px;
+	left: 340px;
+}
+.Fineart {
+	position: absolute;
+	text-align: center;
+	top: -80px;
+	right: 100px;
+}
+}
+@media screen and (max-width:786px) {
+	.text {
+		position: relative;
+	}
+	.Landscape {
+		position: absolute;
+		text-align: center;
+		top: -80px;
+		left: 55px;
+	}
+	.Cityscape {
+		position: absolute;
+		text-align: center;
+		top: -80px;
+		left: 150px;
+	}
+	.Fineart {
+		position: absolute;
+		text-align: center;
+		top: -80px;
+		right: 100px;
+	}
+}
+
+
+
+
